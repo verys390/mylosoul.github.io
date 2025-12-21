@@ -1,0 +1,218 @@
+/* =========================
+   PALETA MYLO SOUL
+========================= */
+:root {
+  --lavanda: #CABDFF;
+  --violeta: #7C6EE6;
+  --gris-oscuro: #1E1E1E;
+  --gris-claro: #F4F4F6;
+  --blanco: #FFFFFF;
+}
+
+/* =========================
+   BASE
+========================= */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--gris-oscuro);
+  background-color: var(--blanco);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.mylo-navbar {
+  background-color: var(--blanco);
+  border-bottom: 1px solid #eaeaea;
+}
+
+.logo-desktop {
+  height: 42px;
+}
+
+.logo-mobile {
+  height: 36px;
+}
+
+.mylo-navbar .nav-link {
+  color: var(--gris-oscuro);
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: color 0.2s ease;
+}
+
+.mylo-navbar .nav-link:hover {
+  color: var(--violeta);
+}
+
+.mylo-navbar .nav-cta {
+  color: var(--violeta);
+  font-weight: 600;
+}
+
+/* =========================
+   HERO / HEADER
+========================= */
+.mylo-hero {
+  background: linear-gradient(
+    135deg,
+    var(--gris-claro) 0%,
+    #ebe9ff 50%,
+    var(--blanco) 100%
+  );
+ 
+}
+
+.hero-title {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  color: var(--gris-oscuro);
+  line-height: 1.2;
+}
+
+.hero-title span {
+  display: block;
+  color: var(--violeta);
+  font-weight: 600;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  max-width: 520px;
+  color: #444;
+}
+.hero-image {
+  max-width: 80%;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   BOTÓN PRINCIPAL
+========================= */
+.btn-mylo {
+  background-color: var(--violeta);
+  color: var(--blanco);
+  padding: 0.75rem 2.2rem;
+  border-radius: 999px;
+  font-weight: 500;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-mylo:hover {
+  background-color: var(--lavanda);
+  color: var(--gris-oscuro);
+}
+.btn-outline-mylo{
+  border: 2px solid var(--violeta);
+  color: var(--violeta);
+  padding: 0.75rem 2.2rem;
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.badge-mylo {
+  background-color: var(--violeta);
+  color: var(--blanco);
+  font-weight: 500;
+  padding: 0.45em 0.75em;
+  border-radius: 999px;
+}
+
+#sobremi h2 {
+  color: var(--gris-oscuro);
+}
+
+#sobremi strong {
+  color: var(--violeta);
+}
+#sobremi strong {
+  color: var(--violeta);
+}
+.project-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.badge-mylo {
+  background-color: var(--violeta);
+  color: #fff;
+  font-weight: 500;
+  border-radius: 999px;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.7rem;
+}
+
+.mylo-section-soft {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f6f4ff 100%
+  );
+}
+.project-card {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(124, 110, 230, 0.15);
+}
+.btn-mylo-outline {
+  border: 1px solid var(--violeta);
+  color: var(--violeta);
+  background: transparent;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.btn-mylo-outline:hover {
+  background-color: var(--violeta);
+  color: #fff;
+}
+.mylo-footer a:hover {
+  opacity: 0.8;
+}
+.mylo-footer {
+  background-color: var(--lavanda);
+}
+.mylo-footer,
+.mylo-footer a,
+.mylo-footer p,
+.mylo-footer small {
+  color: #ffffff;
+}
+.certificado-wrapper {
+  max-width: 520px;
+  width: 100%;
+}
+
+.certificado-img {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 12px;
+}
+.certificado-wrapper {
+  max-width: 520px;
+  width: 100%;
+}
+
+.certificado-img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 12px;
+}
+.bg-lavanda {
+  background-color: #c9c2ff; /* o tu lavanda exacto */
+}
