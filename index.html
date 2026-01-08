@@ -1,269 +1,561 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mylo Soul - Verónica Gallego</title>
+  <meta name="description" content="Mylo Soul Studio es un estudio de diseño y desarrollo web enfocado en crear sitios y aplicaciones modernas, funcionales y alineadas con la identidad de cada proyecto.">
+<meta name="keywords" content="diseño web, desarrollo web, portfolio web, frontend, ui ux, wordpress, javascript, mylo soul studio">
+
+  <title>Mylo Soul Studio | Diseño y Desarrollo Web con Propósito</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <div class="container">
-    <header class="py-5 text-center bg-teal-200 ">
-      <h1 class="display-4 fw-bold custom-name text-light">Verónica Gallego</h1>
-      <p class=" h4 text-semibold text-teal-700">Diseño & Desarrollo Web</p>
-      <p class="h5 text-teal-800">Código consciente para potenciar tu expanción digital</p>
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm ">
-        <div class="container">
-          <img src="img/LOGO.png" alt="Logo MyloSoul" width="60" height="60" class="me-2 rounded-3 shadow-sm">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              
-              <li class="nav-item">
-                <a class="nav-link text-teal-600 fw-semibold" href="#sobremi">Sobre Mí</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-teal-600 fw-semibold" href="#formacion">Formación</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link text-teal-600 fw-semibold" href="#proyectos">Proyectos</a>
-              </li>
-             
-              <li class="nav-item">
-                <a class="nav-link text-teal-600 fw-semibold" href="#contacto">Contacto</a>
-              </li>
-            </ul>
-          </div>
+  <nav class="navbar navbar-expand-lg mylo-navbar sticky-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <!-- Desktop -->
+        <img src="img/logotipo_grisoscuro.png" alt="Mylo Soul Studio" class="logo-desktop d-none d-md-block">
+        <!-- Mobile -->
+        <img src="img/logo_gris.png" alt="Mylo Soul" class="logo-mobile d-block d-md-none">
+      </a>
+
+      <!-- Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMylo">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarMylo">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#sobremi">Sobre MyloSoul</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#formacion">Herramientas & Tecnologías</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-cta" href="#contacto">Contacto</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="hero" class="mylo-hero container mylo-hero-container">
+
+    <div class="row align-items-center gy-3 p-5">
+
+      <!-- TEXTO -->
+      <div class="col-lg-6">
+        <div class="hero-content text-center text-lg-start">
+          <h1 class="hero-title">
+            Diseño & Desarrollo Web
+            <span>con propósito</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Creo experiencias digitales claras, funcionales y alineadas
+            con la esencia de cada proyecto.
+          </p>
+
+          <a href="#contacto" class="btn btn-mylo mt-4">
+            Trabajemos juntos
+          </a>
         </div>
-</nav>
-<main>
-    <section id="sobremi" class="py-5">
-        <div class="container ">
-          <div class="row align-items-center">
-            <div class="col-md-5 text-center mb-4 mb-md-0">
-              <img src="img/sobremi.jpg" alt="Foto de Verónica"  class="img-fluid w-50 mx-auto d-block rounded-circle shadow">
-            </div>
-            <div class="col-md-7">
-              <h2 class="mb-3 text-teal-300 text-bold h1">Sobre Mí</h2>
-              <p><em>Estoy trazando un camino</em> que <strong class="text-teal-700">integra conocimientos diversos</strong> 
-                con la intención de <strong class="text-teal-700">
-                acompañar a otros</strong> desde una propuesta <em>auténtica y significativa</em>.</p>
-              <p>La convergencia entre la <strong class="text-teal-700">disciplina científica de la traumatología</strong> 
-                y la <strong class="text-teal-700">visión estratégica del diseño y desarrollo web</strong> 
-                me permite abordar cada proyecto con una mirada <em>integral, precisa y creativa</em>. Esta síntesis me brinda
-                 la capacidad de <strong class="text-teal-700">potenciar la esencia</strong> de cada iniciativa, transformándola
-                  en una solución digital auténtica, funcional y alineada con su propósito.</p>
-              <p>Me defino como una profesional en <strong class="text-teal-700">constante evolución</strong>, con una fuerte 
-                orientación al <em>aprendizaje, la sensibilidad estética y el pensamiento crítico</em>. A través del diseño y 
-                la comunicación visual, encuentro una forma de <strong class="text-teal-700">conectar dimensiones aparentemente 
-                    opuestas</strong>, generando propuestas que unen <em>funcionalidad, belleza y significado</em>.</p>
-              <p><strong class="text-teal-700">Anhelo acompañar</strong> a personas y marcas que deseen expresar su autenticidad en el mundo digital, 
-                creando espacios <em>conscientes, expansivos</em> y alineados con su visión más profunda.</p>
-              <p><em>Me estoy formando y preparando</em> para brindar una experiencia que integre 
-                <strong class="text-teal-700">sensibilidad, estrategia y propósito</strong>, desde una mirada integral que 
-                combina <strong class="text-teal-700">ciencia, creatividad y transformación</strong>.</p>
-            </div>
-          </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="col-lg-6 text-center">
+        <div class="hero-image-wrapper">
+          <img src="img/banner.png" alt="Logo Mylo Soul Studio" class="img-fluid hero-image">
+
         </div>
-      </section>
-      <section id="formacion" class="py-5 bg-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 mb-5">
-                <h2 class="mb-3 text-teal-300 text-bold h1">Habilidades</h2>
-              <div class="row text-center justify-content-center g-4">
-                <div class="col-4 col-md-4">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" class="img-fluid" width="50">
-                  <p class="mt-2 small">Photoshop</p>
-                </div>
-                <div class="col-4 col-md-4">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="img-fluid" width="50">
-                  <p class="mt-2 small">HTML5</p>
-                </div>
-                <div class="col-4 col-md-4">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="img-fluid" width="50">
-                  <p class="mt-2 small">CSS3</p>
-                </div>
-                <div class="col-4 col-md-4">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="img-fluid" width="50">
-                  <p class="mt-2 small">JavaScript</p>
-                </div>
-                <div class="col-4 col-md-4">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Illustrator" class="img-fluid" width="50">
-                  <p class="mt-2 small">Illustrator</p>
-                </div>
-                <div class="col-4 col-md-4">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="img-fluid" width="50">
-                  <p class="mt-2 small">Figma</p>
-                </div>
-                <div class="col-4 col-md-4">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress" class="img-fluid" width="50">
-                  <p class="mt-2 small">WordPress</p>
-                </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <section id="sobremi" class="py-5 bg-white">
+  <div class="container-lg py-lg-4 px-4">
+    <div class="row align-items-center g-5">
+
+      <!-- LOGO (solo desktop) -->
+      <div class="col-lg-5 text-center d-none d-lg-block">
+        <img 
+          src="img/logo_lavanda.png" 
+          alt="Mylo Soul Studio" 
+          class="img-fluid hero-image"
+        >
+      </div>
+
+      <!-- TEXTO -->
+      <div class="col-lg-7">
+        <span class="text-uppercase text-muted small fw-semibold">
+          Sobre Mylo Soul Studio
+        </span>
+
+        <h2 class="mt-2 mb-4 h1 fw-bold">
+          Diseño y Desarrollo web
+          <br class="d-none d-md-block">
+          con enfoque estratégico
+        </h2>
+
+        <p class="mb-3">
+          Mylo Soul Studio es un espacio de diseño y desarrollo web orientado a crear
+          soluciones digitales claras, funcionales y alineadas con la identidad de cada
+          proyecto.
+        </p>
+
+        <p class="mb-3">
+          El estudio trabaja desde una mirada integral que combina
+          <strong>diseño visual, experiencia de usuario y programación web</strong>,
+          con el objetivo de construir productos digitales coherentes, escalables y
+          preparados para crecer.
+        </p>
+
+        <p class="mb-3">
+          Cada proyecto se aborda de manera personalizada, cuidando tanto la estética como
+          la estructura técnica, para lograr sitios y aplicaciones que comuniquen con
+          claridad, transmitan confianza y aporten valor real.
+        </p>
+
+        <p class="mb-0">
+          Mylo Soul Studio acompaña a marcas, profesionales y emprendimientos que buscan
+          consolidar su presencia digital a través de soluciones modernas, estratégicas y
+          alineadas con su visión.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+    <section id="formacion" class="py-5 mylo-hero container mylo-hero-container">
+      <div class="container-lg">
+        <div class="row g-5">
+
+          <!-- HERRAMIENTAS -->
+          <div class="col-lg-6">
+            <span class="text-uppercase text-muted small fw-semibold">
+              Herramientas & Tecnologías
+            </span>
+            <h2 class="h1 fw-bold mb-4">
+              Stack de trabajo
+            </h2>
+
+            <div class="row text-center g-4">
+
+              <!-- Diseño -->
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" width="48">
+                <p class="small mt-2 mb-0">Photoshop</p>
               </div>
-            </div>
-            <div class="col-md-6">
-                <h2 class="mb-3 text-teal-300 text-bold h1">Formación</h2>
-              <div class="row justify-content-center">
-                <div class="col-12 mb-4">
-                  <div class="border-start border-4 border-secondary ps-4">
-                    <h3 class="fw-bold h4">Año 2000</h3>
-                    <p class="mb-0">Bachillerato en Ciencias Exactas<br>Escuela Media 2º - Haedo</p>
-                  </div>
-                </div>
-                <div class="col-12 mb-4">
-                  <div class="border-start border-4 border-secondary ps-4">
-                    <h3 class="fw-bold h4">Año 2001</h3>
-                    <p class="mb-0">Universidad de Buenos Aires<br>Medicina</p>
-                  </div>
-                </div>
-                <div class="col-12 mb-4">
-                  <div class="border-start border-4 border-secondary ps-4">
-                    <h3 class="fw-bold h4">Año 2012</h3>
-                    <p class="mb-0">Especialidad en Ortopedia y Traumatología</p>
-                  </div>
-                </div>
-                <div class="col-12 mb-4">
-                  <div class="border-start border-4 border-secondary ps-4">
-                    <h3 class="fw-bold h4">Año 2024</h3>
-                    <p class="mb-0">Diseño y Programación Web<br>Escuela Da Vinci</p>
-                  </div>
-                </div>
-                <div class="text-center">
-                    <a href="formacion.html" class="btn btn-teal-300 btn-lg mt-4">Ver Formación</a>
-                  </div>
+
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
+                  width="48">
+                <p class="small mt-2 mb-0">Illustrator</p>
               </div>
+
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="48">
+                <p class="small mt-2 mb-0">Figma</p>
+              </div>
+
+              <!-- Frontend -->
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="48">
+                <p class="small mt-2 mb-0">HTML5</p>
+              </div>
+
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="48">
+                <p class="small mt-2 mb-0">CSS3</p>
+              </div>
+
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  width="48">
+                <p class="small mt-2 mb-0">JavaScript</p>
+              </div>
+
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="48">
+                <p class="small mt-2 mb-0">Vue.js</p>
+              </div>
+              <div class="col-4 col-md-3 text-center">
+                <i class="bi bi-phone fs-1 text-dark"></i>
+                <p class="small mt-2 mb-0">PWA</p>
+              </div>
+
+
+
+
+              <!-- Backend -->
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="48">
+                <p class="small mt-2 mb-0">PHP</p>
+              </div>
+
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="48">
+                <p class="small mt-2 mb-0">MySQL</p>
+              </div>
+
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+                  width="48">
+                <p class="small mt-2 mb-0">WordPress</p>
+              </div>
+
             </div>
           </div>
-          
 
-        </div> 
+          <!-- FORMACIÓN -->
+          <div class="col-lg-6">
+            <span class="text-uppercase text-muted small fw-semibold">
+              Formación
+            </span>
+            <h2 class="h1 fw-bold mb-4">
+              Trayectoria académica
+            </h2>
 
-      </section>
-  
-    <section id="proyectos" class="py-5">
-        <h2 class="mb-3 text-teal-300 text-bold h1 text-center">Proyectos Destacados</h2>
-      <div class="row g-4">
-
-        <div class="col-sm-6 col-lg-4">
-          <div class="card h-100 text-center shadow-sm">
-              <img src="img/uiux/portada.png" class="card-img-top" alt="Gourmet Selection - App móvil">
-              <div class="card-body d-flex flex-column justify-content-between">
-                <h3 class="card-title text-teal-400">Gourmet Selection (UI/UX)</h3>
-                <p class="card-text">
-                    Prototipo de aplicación móvil desarrollado como proyecto UI/UX. Diseñado con Figma,
-                     Illustrator y Photoshop, combina estética y funcionalidad para explorar una experiencia 
-                     gourmet integral.
-                  </p>
-                <a href="proyecto1.html" class="btn btn-teal-300 btn-lg mt-4">Ver proyecto</a>
-              </div>
+            <div class="border-start border-3 ps-4 mb-4">
+              <h3 class="h5 fw-semibold mb-1">Diseño y Programación Web</h3>
+              <p class="mb-0 text-muted">Escuela Da Vinci · 2024 – Actualidad</p>
             </div>
-          </div>
-          
 
-          <div class="col-sm-6 col-lg-4">
-            <div class="card h-100 text-center shadow-sm">
-              <img src="img/idm/idmstanley.jpg" class="card-img-top" alt="Portada Proyecto Stanley">
-              <div class="card-body d-flex flex-column justify-content-between">
-                <h3 class="card-title text-teal-400">Interacción con Dispositivos Móviles</h3>
-                <p class="card-text">
-                  Prototipo web responsive de producto con foco en experiencia de usuario. Diseño 100% adaptable,
-                   desarrollado con HTML, CSS y Bootstrap.
-                </p>
-                <a href="proyecto2.html" class="btn btn-teal-300 btn-lg mt-4">Ver proyecto</a>
-              </div>
+            <div class="border-start border-3 ps-4 mb-4">
+              <h3 class="h5 fw-semibold mb-1">Especialización profesional</h3>
+              <p class="mb-0 text-muted">
+                Formación universitaria previa que aporta
+                pensamiento analítico, metodología y enfoque estratégico.
+              </p>
             </div>
+
+            <a href="formacion.html" class="btn btn-outline-mylo mt-3">
+              Ver formación completa
+            </a>
           </div>
 
-          <div class="col-sm-6 col-lg-4">
-            <div class="card h-100 text-center shadow-sm">
-              <img src="img/js/clinica.jpg" class="card-img-top" alt="Clínica Salud Total">
-              <div class="card-body d-flex flex-column justify-content-between">
-                <h3 class="card-title text-teal-400">Clínica Salud Total</h3>
-                <p class="card-text">
-                  Proyecto web integral que simula un sistema de turnos médicos y planes de salud.
-                   Desarrollado con JavaScript, Bootstrap y LocalStorage. Incluye formulario interactivo y 
-                   modal de contratación.
-                </p>
-                <a href="proyecto3.html" class="btn btn-teal-300 btn-lg mt-4">Ver proyecto</a>
-              </div>
-            </div>
-          </div>
-      </div>  
+        </div>
+      </div>
     </section>
 
-    <section id="contacto" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="mb-5 text-center text-teal-500 fw-bold display-6">¡Conectemos!</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <form id="formContacto" class="p-4 shadow-lg rounded-4 bg-white border border-1 border-teal-100">
-              <div class="mb-4">
-                <label for="nombre" class="form-label fw-semibold text-teal-500">Nombre y Apellido</label>
-                <input type="text" class="form-control rounded-pill px-4 py-2" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
-              </div>
-              <div class="mb-4">
-                <label for="email" class="form-label fw-semibold text-teal-500">Email</label>
-                <input type="email" class="form-control rounded-pill px-4 py-2" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
-              </div>
-              <div class="mb-4">
-                <label for="mensaje" class="form-label fw-semibold text-teal-500">Mensaje</label>
-                <textarea class="form-control rounded-4 px-4 py-2" id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu mensaje aquí..." required></textarea>
-              </div>
-              <div class="text-center">
-                <div class="text-center">
-                  <button type="submit" class="btn btn-lg px-5 py-2 rounded-pill shadow-sm text-teal-100 btn-teal-500">
-                    <i class="fab fa-whatsapp me-2"></i> Enviar por WhatsApp
-                  </button>
-                  
+
+    <section id="proyectos" class="py-5 px-4 ">
+
+      <div class="container-xl">
+
+        <!-- TÍTULO -->
+        <div class="text-center mb-5">
+          <span class="text-uppercase text-muted small fw-semibold">Portfolio</span>
+          <h2 class="h1 fw-bold mt-2">Proyectos Destacados</h2>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- CARD -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm project-card">
+
+              <img src="img/uiux/portada.png" class="card-img-top" alt="Gourmet Selection UI/UX">
+
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 fw-semibold mb-2">Gourmet Selection</h3>
+
+                <p class="text-muted small mb-3">
+                  Prototipo UI/UX de app móvil enfocado en experiencia de usuario.
+                </p>
+
+                <div class="mb-3">
+                  <span class="badge badge-mylo">UI/UX</span>
+                  <span class="badge badge-mylo">Figma</span>
                 </div>
-                
+
+                <a href="https://www.behance.net/gallery/215041089/Gourmet-Selection" target="_blank"
+                  class="btn btn-mylo-outline btn-sm mt-auto">
+                  Ver proyecto
+                </a>
               </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm project-card">
+
+              <img src="img/idm/idmstanley.jpg" class="card-img-top" alt="Stanley Responsive">
+
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 fw-semibold mb-2">Stanley · Web Responsive</h3>
+
+                <p class="text-muted small mb-3">
+                  Sitio responsive con foco en interacción móvil.
+                </p>
+
+                <div class="mb-3">
+                  <span class="badge badge-mylo">HTML</span>
+                  <span class="badge badge-mylo">CSS</span>
+                  <span class="badge badge-mylo">Bootstrap</span>
+                </div>
+
+                <a href="https://verys390.github.io/idm.github.io/" target="_blank"
+                  class="btn btn-mylo-outline btn-sm mt-auto">
+                  Ver proyecto
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm project-card">
+
+              <img src="img/js/clinica.jpg" class="card-img-top" alt="Clínica Salud Total">
+
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 fw-semibold mb-2">Clínica Salud Total</h3>
+
+                <p class="text-muted small mb-3">
+                  Sistema web con simulación de turnos y planes.
+                </p>
+
+                <div class="mb-3">
+                  <span class="badge badge-mylo">JavaScript</span>
+                  <span class="badge badge-mylo">LocalStorage</span>
+                </div>
+
+                <a href="https://verys390.github.io/simulador.github.io/" target="_blank"
+                  class="btn btn-mylo-outline btn-sm mt-auto">
+                  Ver proyecto
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm project-card">
+
+              <img src="img/maquetado/portada.png" class="card-img-top" alt="Proyecto adicional">
+
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 fw-semibold mb-2">Proyecto Web</h3>
+
+                <p class="text-muted small mb-3">
+                  Desarrollo frontend responsive.
+                </p>
+
+                <div class="mb-3">
+                  <span class="badge badge-mylo">HTML</span>
+                  <span class="badge badge-mylo">CSS</span>
+                </div>
+
+                <a href="https://www.behance.net/gallery/240461011/Maquetado-y-Desarrollo-Web-Responsive-HTML-CSS"
+                  class="btn btn-mylo-outline btn-sm mt-auto">
+                  Ver proyecto
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contacto" class="py-5 mylo-section-soft mylo-hero container">
+      <div class="container">
+
+        <!-- TÍTULO -->
+        <div class="text-center mb-5">
+          <span class="text-uppercase text-muted small fw-semibold">Contacto</span>
+          <h2 class="h1 fw-bold mt-2">Trabajemos juntos</h2>
+          <p class="text-muted mt-2">
+            Contame sobre tu proyecto y te respondo a la brevedad.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+
+            <form id="formContacto" class="mylo-form p-4 p-md-5">
+
+              <!-- Nombre -->
+              <div class="mb-4">
+                <label for="nombre" class="form-label fw-semibold">
+                  Nombre y apellido
+                </label>
+                <input type="text" class="form-control mylo-input" id="nombre" placeholder="Tu nombre completo"
+                  required>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-4">
+                <label for="email" class="form-label fw-semibold">
+                  Email
+                </label>
+                <input type="email" class="form-control mylo-input" id="email" placeholder="tucorreo@email.com"
+                  required>
+              </div>
+
+              <div class="mb-4">
+                <label for="telefono" class="form-label fw-semibold text-teal-500">
+                  Teléfono
+                </label>
+                <input type="tel" class="form-control rounded-pill px-4 py-2" id="telefono" name="telefono"
+                  placeholder="Tu número de contacto" required>
+              </div>
+
+
+              <!-- Mensaje -->
+              <div class="mb-4">
+                <label for="mensaje" class="form-label fw-semibold">
+                  Mensaje
+                </label>
+                <textarea class="form-control mylo-textarea" id="mensaje" rows="4"
+                  placeholder="Contame brevemente qué necesitás..." required></textarea>
+              </div>
+
+              <!-- CTA -->
+              <div class="text-center mt-4">
+                <button type="submit" class="btn btn-mylo btn-lg px-5">
+                  <i class="fab fa-whatsapp me-2"></i>
+                  Enviar por WhatsApp
+                </button>
+              </div>
+
             </form>
           </div>
         </div>
       </div>
     </section>
-    
-    
-</main>
-<footer class="py-5 text-center bg-teal-200">
-  <div class="container text-center">
-    <p class="mb-1 fw-bold fs-5 text-teal-600">Verónica Elizabeth Gallego</p>
-    <p class="mb-1 text-teal-800">mylosoul2@gmail.com</p>
-    <p class="mb-3 text-teal-800">Buenos Aires, Argentina</p>
 
-    <div class="d-flex justify-content-center gap-4 mb-2">
-      <a href="https://www.instagram.com/mylo_soul" target="_blank" class="text-teal-500 fs-4" aria-label="Instagram">
-        <i class="bi bi-instagram"></i>
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=61571327818606" target="_blank" class="text-primary fs-4" aria-label="Facebook">
-        <i class="bi bi-facebook"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/veronica-gallego-5338122b3" target="_blank" class="text-info fs-4" aria-label="LinkedIn">
-        <i class="bi bi-linkedin"></i>
-      </a>
-      <a href="https://wa.me/5492344413407" target="_blank" class="text-success fs-4" aria-label="WhatsApp">
-        <i class="bi bi-whatsapp"></i>
-      </a>
+
+
+  </main>
+
+<footer class="mylo-footer py-5 container">
+  
+
+    <div class="row gy-4 align-items-center text-center text-md-start">
+
+      <!-- 1️⃣ LOGO + LOCALIZACIÓN -->
+      <div class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-start ">
+        <img 
+          src="img/logo_lavanda_b.png" 
+          alt="Mylo Soul Studio"
+          class="logo-desktop d-none d-md-block px-5 mb-2"
+         
+        >
+
+        <p class="mb-1 fw-semibold px-2">Mylo Soul Studio</p>
+        <p class="small mb-0 px-2">Buenos Aires · Argentina</p>
+      </div>
+
+      <!-- 2️⃣ NAV FOOTER -->
+      <nav class="col-12 col-md-4 px-4">
+        <ul class="list-unstyled mb-0 d-flex flex-column gap-2 align-items-center align-items-md-start">
+          <li><a href="#sobremi" class="text-white text-decoration-none">Sobre MyloSoul</a></li>
+          <li><a href="#formacion" class="text-white text-decoration-none">Herramientas & Tecnologías</a></li>
+          <li><a href="#proyectos" class="text-white text-decoration-none">Proyectos</a></li>
+          <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- 3️⃣ REDES SOCIALES -->
+   <div class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-end">
+  <p class="fw-semibold mb-2 px-5 h4 text-white">
+    Seguinos
+  </p>
+<div class="d-flex gap-3 justify-content-center justify-content-md-end px-5">
+
+  <!-- Instagram -->
+  <a 
+    href="https://www.instagram.com/mylosoul/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="text-white fs-4"
+    aria-label="Instagram Mylo Soul"
+  >
+    <i class="bi bi-instagram"></i>
+  </a>
+
+  <!-- LinkedIn -->
+  <a 
+    href="https://www.linkedin.com/in/veronica-gallego-5338122b3" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="text-white fs-4"
+    aria-label="LinkedIn"
+  >
+    <i class="bi bi-linkedin"></i>
+  </a>
+
+  <!-- WhatsApp -->
+  <a 
+    href="https://wa.me/5492344412474" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="text-white fs-4"
+    aria-label="WhatsApp"
+  >
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Behance -->
+  <a 
+    href="https://www.behance.net/veronicagallego2"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-white fs-4"
+    aria-label="Behance Portfolio"
+  >
+    <i class="bi bi-behance"></i>
+  </a>
+
+</div>
+
+</div>
+
+
+    <!-- COPYRIGHT -->
+    <div class="text-center mt-4">
+      <small class="text-white">
+        © 2025 · Mylo Soul Studio · Todos los derechos reservados
+      </small>
     </div>
 
-    <small class="text-muted text-teal-800">&copy; 2025 · Todos los derechos reservados</small>
-  </div>
+ 
 </footer>
 
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</div>
-<script src="js/main.js"></script>
+  </div>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,29 +1,39 @@
+const form = document.getElementById("formContacto");
 
-  const form = document.getElementById("formContacto");
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); // Evita envío tradicional
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); // Evitamos envío tradicional
+  const nombre = document.getElementById("nombre").value;
+  const email = document.getElementById("email").value;
+  const telefono = document.getElementById("telefono").value;
+  const mensaje = document.getElementById("mensaje").value;
 
-    const nombre = document.getElementById("nombre").value;
-    const email = document.getElementById("email").value;
-    const mensaje = document.getElementById("mensaje").value;
+  const texto = `
+Hola Mylo Soul Studio
 
-    const texto = `Hola Verónica! 👋%0AMi nombre es: ${nombre}%0AMi email es: ${email}%0AMensaje: ${mensaje}`;
-    const url = `https://wa.me/5492344413407?text=${texto}`;
+Nombre: ${nombre}
+Email: ${email}
+Teléfono: ${telefono}
 
-    window.open(url, "_blank");
+Mensaje:
+${mensaje}
+  `;
 
-    // Opcional: mostrar mensaje de confirmación
-    Swal.fire({
-      title: '¡Redireccionando a WhatsApp! 📱',
-      text: 'Se abrirá un chat con tus datos cargados.',
-      icon: 'info',
-      confirmButtonColor: '#20c997',
-      confirmButtonText: 'Perfecto'
-    });
+  const url = `https://wa.me/5492344412474?text=${encodeURIComponent(texto)}`;
 
-    form.reset();
+  // Abrir WhatsApp
+  window.open(url, "_blank");
+
+  // Feedback visual
+  Swal.fire({
+    title: 'Redirigiendo a WhatsApp 📲',
+    text: 'Tu mensaje ya está listo para enviar.',
+    icon: 'success',
+    confirmButtonText: 'Perfecto',
+    confirmButtonColor: '#7C6EE6' // violeta Mylo
   });
 
+  form.reset();
+});
 
   
