@@ -2,599 +2,559 @@
 <html lang="es">
 
 <head>
-  <!-- =========================
-       CONFIGURACIÓN BÁSICA
-  ========================== -->
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mylo Soul Studio es un estudio de diseño y desarrollo web enfocado en crear sitios y aplicaciones modernas, funcionales y alineadas con la identidad de cada proyecto.">
+<meta name="keywords" content="diseño web, desarrollo web, portfolio web, frontend, ui ux, wordpress, javascript, mylo soul studio">
 
-  <!-- =========================
-       SEO PRINCIPAL
-  ========================== -->
-  <title>Mylo Soul Studio | Diseño y Desarrollo Web Estratégico</title>
-
-  <meta name="description"
-    content="Mylo Soul Studio es un estudio de diseño y desarrollo web especializado en onepages estratégicas, sitios modernos y experiencias digitales claras, funcionales y alineadas con la identidad de cada proyecto.">
-
-  <meta name="keywords"
-    content="diseño web, desarrollo web, onepage, landing page, portfolio web, frontend, ui ux, wordpress, javascript, diseño web estratégico, mylo soul studio">
-
-  <meta name="author" content="Mylo Soul Studio">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="es">
-  <meta name="theme-color" content="#CABDFF">
-
-  <!-- =========================
-       OPEN GRAPH (LinkedIn, WhatsApp, Facebook)
-  ========================== -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Mylo Soul Studio | Diseño y Desarrollo Web Estratégico">
-  <meta property="og:description"
-    content="Diseño y desarrollo de onepages estratégicas y sitios web modernos, pensados para comunicar lo esencial y generar contacto.">
-  <meta property="og:url" content="https://verys390.github.io/mylosoul.github.io/">
-  <meta property="og:image" content="https://verys390.github.io/mylosoul.github.io/img/og-mylo.jpg">
-  <meta property="og:site_name" content="Mylo Soul Studio">
-
-  <!-- =========================
-       TWITTER / X
-  ========================== -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Mylo Soul Studio | Diseño y Desarrollo Web Estratégico">
-  <meta name="twitter:description"
-    content="Onepages y sitios web diseñados para comunicar con claridad, coherencia y propósito.">
-  <meta name="twitter:image" content="https://verys390.github.io/mylosoul.github.io/img/og-mylo.jpg">
-
-  <!-- =========================
-       FAVICON / ICONOS
-  ========================== -->
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/x-icon" href="img/favicon_io/favicon.ico">
-  <link rel="manifest" href="img/favicon_io/site.webmanifest">
-  <!-- =========================
-       FUENTES (opcional, recomendado)
-  ========================== -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- =========================
-       LIBRERÍAS
-  ========================== -->
-  <!-- Bootstrap -->
+  <title>Mylo Soul Studio | Diseño y Desarrollo Web con Propósito</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Bootstrap Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- =========================
-       CSS PRINCIPAL
-  ========================== -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body>
-
-
   <nav class="navbar navbar-expand-lg mylo-navbar sticky-top">
-    <div class="container mylo-container">
+    <div class="container">
+      <!-- Logo -->
       <a class="navbar-brand d-flex align-items-center" href="#">
+        <!-- Desktop -->
         <img src="img/logotipo_grisoscuro.png" alt="Mylo Soul Studio" class="logo-desktop d-none d-md-block">
+        <!-- Mobile -->
         <img src="img/logo_gris.png" alt="Mylo Soul" class="logo-mobile d-block d-md-none">
       </a>
 
+      <!-- Toggle -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMylo">
         <span class="navbar-toggler-icon"></span>
       </button>
 
+      <!-- Links -->
       <div class="collapse navbar-collapse" id="navbarMylo">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#sobremi">Sobre MyloSoul</a></li>
-          <li class="nav-item"><a class="nav-link" href="#formacion">Herramientas & Tecnologías</a></li>
-          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link nav-cta" href="#contacto">Contacto</a></li>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#sobremi">Sobre MyloSoul</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#formacion">Herramientas & Tecnologías</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-cta" href="#contacto">Contacto</a>
+          </li>
+
         </ul>
       </div>
     </div>
   </nav>
-  <div class="container">
 
-    <header id="hero" class="mylo-hero">
-      <div class="container mylo-container">
-        <div class="row align-items-center gy-4 py-5">
+  <header id="hero" class="mylo-hero container mylo-hero-container">
 
-          <div class="col-lg-6 text-center text-lg-start">
-            <h1 class="hero-title">
-              Diseño & Desarrollo Web
-              <span>con propósito</span>
-            </h1>
+    <div class="row align-items-center gy-3 p-5">
 
-            <p class="hero-subtitle">
-              Creo experiencias digitales claras, funcionales y alineadas
-              con la esencia de cada proyecto.
-            </p>
+      <!-- TEXTO -->
+      <div class="col-lg-6">
+        <div class="hero-content text-center text-lg-start">
+          <h1 class="hero-title">
+            Diseño & Desarrollo Web
+            <span>con propósito</span>
+          </h1>
 
-            <a href="#contacto" class="btn btn-mylo mt-3">
-              Trabajemos juntos
-            </a>
-          </div>
-
-          <div class="col-lg-6 text-center">
-            <img src="img/banner.png" alt="Mylo Soul Studio" class="img-fluid hero-image">
-          </div>
-
-        </div>
-      </div>
-    </header>
-
-    <main>
-
-      <section id="sobremi" class="py-5 mylo-section-soft">
-        <div class="container mylo-container">
-
-          <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-
-              <span class="text-uppercase small fw-semibold text-muted">
-                Sobre Mylo Soul Studio
-              </span>
-
-              <h2 class="fw-bold mt-2 mb-4">
-                Diseño y desarrollo web<br>
-                <span class="text-mylo">con enfoque estratégico</span>
-              </h2>
-
-              <p class="mb-4">
-                Creo <strong>experiencias digitales claras, funcionales y alineadas con la
-                  identidad de cada proyecto</strong>, combinando diseño visual,
-                experiencia de usuario y desarrollo web.
-              </p>
-
-            </div>
-          </div>
-
-
-          <div class="row g-4 mt-2 justify-content-center">
-
-            <div class="col-md-4 text-center">
-              <div class="about-icon">
-                <i class="bi bi-layout-text-window"></i>
-              </div>
-              <h3 class="h6 fw-semibold mt-3">Claridad</h3>
-              <p class="small text-muted mb-0">
-                Información ordenada y mensajes simples para comunicar lo esencial.
-              </p>
-            </div>
-
-            <div class="col-md-4 text-center">
-              <div class="about-icon">
-                <i class="bi bi-diagram-3"></i>
-              </div>
-              <h3 class="h6 fw-semibold mt-3">Estrategia</h3>
-              <p class="small text-muted mb-0">
-                Diseño y tecnología alineados a objetivos reales del proyecto.
-              </p>
-            </div>
-
-            <div class="col-md-4 text-center">
-              <div class="about-icon">
-                <i class="bi bi-graph-up-arrow"></i>
-              </div>
-              <h3 class="h6 fw-semibold mt-3">Crecimiento</h3>
-              <p class="small text-muted mb-0">
-                Sitios pensados para escalar y acompañar la evolución digital.
-              </p>
-            </div>
-
-          </div>
-
-
-          <div class="text-center mt-5">
-            <a href="#contacto" class="btn btn-mylo">
-              Trabajemos juntos
-            </a>
-          </div>
-
-        </div>
-      </section>
-
-      <section id="formacion" class="py-5 mylo-hero">
-        <div class="container mylo-container">
-
-          <div class="bg-white rounded-4 shadow-sm px-3 px-md-4 px-lg-5 py-4 py-lg-5">
-
-            <div class="row g-5">
-
-
-              <div class="col-lg-6">
-                <span class="text-uppercase text-muted small fw-semibold">
-                  Herramientas & Tecnologías
-                </span>
-
-                <h2 class="fw-bold mb-4">
-                  Stack de trabajo
-                </h2>
-
-                <div class="row text-center g-4">
-                  <div class="col-3"><img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" width="40">
-                    <p class="small">Photoshop</p>
-                  </div>
-                  <div class="col-3"><img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
-                      width="40">
-                    <p class="small">Illustrator</p>
-                  </div>
-                  <div class="col-3"><img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="40">
-                    <p class="small">Figma</p>
-                  </div>
-                  <div class="col-3"><img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40">
-                    <p class="small">HTML5</p>
-                  </div>
-                  <div class="col-3"><img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40">
-                    <p class="small">CSS3</p>
-                  </div>
-                  <div class="col-3"><img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                      width="40">
-                    <p class="small">JavaScript</p>
-                  </div>
-                  <div class="col-3"><img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="40">
-                    <p class="small">Vue.js</p>
-                  </div>
-                  <div class="col-3"><i class="bi bi-phone fs-3"></i>
-                    <p class="small">PWA</p>
-                  </div>
-                  <div class="col-3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                      width="40">
-                    <p class="small">PHP</p>
-                  </div>
-                  <div class="col-3"><img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40">
-                    <p class="small">MySQL</p>
-                  </div>
-                  <div class="col-3"><img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
-                      width="40">
-                    <p class="small">WordPress</p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="col-lg-6">
-                <span class="text-uppercase text-muted small fw-semibold">
-                  Formación
-                </span>
-
-                <h2 class="fw-bold mb-4">
-                  Trayectoria académica
-                </h2>
-
-                <div class="border-start border-3 ps-4 mb-3">
-                  <h3 class="h6 fw-semibold">Diseño y Programación Web</h3>
-                  <p class="small text-muted mb-0">Escuela Da Vinci · 2024 – Actualidad</p>
-                </div>
-
-                <div class="border-start border-3 ps-4 mb-4">
-                  <h3 class="h6 fw-semibold">Especialización profesional</h3>
-                  <p class="small text-muted mb-0">
-                    Formación universitaria previa orientada al análisis y al enfoque estratégico.
-                  </p>
-                </div>
-
-                <a href="formacion.html" class="btn btn-mylo btn-sm flex-fill text-center">
-                  Ver formación completa
-                </a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="onepage" class="py-5 bg-white">
-        <div class="container mylo-container">
-
-          <div class="text-center mb-5">
-            <span class="text-uppercase text-muted small fw-semibold">
-              Servicios
-            </span>
-
-            <h2 class="fw-bold mt-2">
-              Onepages estratégicas
-            </h2>
-
-            <div class="mx-auto my-3" style="width:60px;height:3px;border-radius:2px;background:#7b6cf6;"></div>
-
-            <p class="text-muted mt-3 mx-auto" style="max-width:720px;">
-              Sitios web de una sola página pensados para comunicar lo esencial,
-              ordenar la información y facilitar el contacto con tu público.
-            </p>
-          </div>
-
-          <div class="row g-4 mb-5 text-center">
-
-            <div class="col-md-6 col-lg-3">
-              <div class="mx-auto mb-3 icon-circle">
-                <i class="bi bi-layout-text-window"></i>
-              </div>
-              <h3 class="h6 fw-semibold">Presentación clara</h3>
-              <p class="small text-muted mb-0">
-                Ideal para mostrar servicios, marcas personales o proyectos.
-              </p>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-              <div class="mx-auto mb-3 icon-circle">
-                <i class="bi bi-lightning-charge"></i>
-              </div>
-              <h3 class="h6 fw-semibold">Comunicación directa</h3>
-              <p class="small text-muted mb-0">
-                Todo el contenido en un solo recorrido, sin distracciones.
-              </p>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-              <div class="mx-auto mb-3 icon-circle">
-                <i class="bi bi-phone"></i>
-              </div>
-              <h3 class="h6 fw-semibold">100% responsive</h3>
-              <p class="small text-muted mb-0">
-                Diseño adaptado a mobile, tablet y desktop.
-              </p>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-              <div class="mx-auto mb-3 icon-circle">
-                <i class="bi bi-chat-dots"></i>
-              </div>
-              <h3 class="h6 fw-semibold">Genera contacto</h3>
-              <p class="small text-muted mb-0">
-                Pensadas para guiar al usuario a escribirte.
-              </p>
-            </div>
-
-          </div>
-
-          <div class="row g-4 justify-content-center">
-            <div class="col-sm-6 col-lg-4">
-              <div class="card h-100 border-0 shadow-sm project-card">
-                <div class="card-body d-flex flex-column">
-
-                  <span class="badge badge-mylo mb-2 align-self-start">Básica</span>
-
-                  <h3 class="h5 fw-semibold mb-2">Onepage Básica</h3>
-
-                  <p class="small text-muted mb-3">
-                    Ideal para presentar tu proyecto de forma clara, simple y profesional.
-                  </p>
-
-                  <ul class="small text-muted mb-4 ps-3">
-                    <li>Estructura en una sola página</li>
-                    <li>Diseño responsive</li>
-                    <li>Secciones informativas</li>
-                    <li>Botón de contacto</li>
-                  </ul>
-
-                  <div class="mt-auto d-flex flex-column flex-sm-row gap-2">
-                    <a href="https://verys390.github.io/amitabha_basica/" target="_blank"
-                      class="btn btn-mylo-outline btn-sm flex-fill text-center">
-                      Ver ejemplo
-                    </a>
-                    <a href="#contacto" class="btn btn-mylo btn-sm flex-fill text-center">
-                      Consultar
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4">
-              <div class="card h-100 border-0 shadow-sm project-card border border-2 border-mylo">
-                <div class="card-body d-flex flex-column">
-
-                  <span class="badge badge-mylo mb-2 align-self-start">Intermedia</span>
-
-                  <h3 class="h5 fw-semibold mb-2">Onepage Intermedia</h3>
-
-                  <p class="small text-muted mb-3">
-                    Pensada para proyectos que necesitan mayor contenido y jerarquía visual.
-                  </p>
-
-                  <ul class="small text-muted mb-4 ps-3">
-                    <li>Todo lo de la básica</li>
-                    <li>Más secciones (servicios / beneficios)</li>
-                    <li>Diseño visual más trabajado</li>
-                    <li>Animaciones suaves</li>
-                    <li>Optimización UX</li>
-                  </ul>
-                  <div class="mt-auto d-flex flex-column flex-sm-row gap-2">
-                    <a href="https://verys390.github.io/amithaba-onepage-intermedia/" class="btn btn-mylo-outline btn-sm flex-fill text-center">
-                      Ver ejemplo
-                    </a>
-                    <a href="#contacto" class="btn btn-mylo btn-sm flex-fill text-center">
-                      Consultar
-                    </a>
-                  </div>
-
-
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4">
-              <div class="card h-100 border-0 shadow-sm project-card">
-                <div class="card-body d-flex flex-column">
-
-                  <span class="badge badge-mylo mb-2 align-self-start">Premium</span>
-
-                  <h3 class="h5 fw-semibold mb-2">Onepage Premium</h3>
-
-                  <p class="small text-muted mb-3">
-                    Una experiencia digital completa, estratégica y personalizada.
-                  </p>
-
-                  <ul class="small text-muted mb-4 ps-3">
-                    <li>Diseño 100% personalizado</li>
-                    <li>Estrategia de contenido</li>
-                    <li>Optimización SEO básica</li>
-                    <li>Animaciones avanzadas</li>
-                    <li>Integraciones (WhatsApp, formularios)</li>
-                  </ul>
-
-                  <div class="mt-auto d-flex flex-column flex-sm-row gap-2">
-                    <a href="#" class="btn btn-mylo-outline btn-sm flex-fill text-center">
-                      Ver ejemplo
-                    </a>
-                    <a href="#contacto" class="btn btn-mylo btn-sm flex-fill text-center">
-                      Consultar
-                    </a>
-                  </div>
-
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-
-      <section id="contacto" class="py-5 bg-white">
-        <div class="container mylo-container">
-
-          <div class="row justify-content-center">
-            <div class="col-lg-6 text-center">
-
-              <span class="text-uppercase small fw-semibold text-muted">
-                Contacto
-              </span>
-
-              <h2 class="fw-bold mt-2 mb-3">
-                ¿Hablamos de tu proyecto?
-              </h2>
-
-              <p class="text-muted mb-4">
-                Contame brevemente qué necesitás y te respondo por WhatsApp.
-              </p>
-
-              <form id="formContacto" class="text-start" novalidate>
-
-
-                <div class="mb-3">
-                  <label class="form-label small">Nombre</label>
-                  <input type="text" id="nombre" class="form-control mylo-input" placeholder="Tu nombre">
-                  <small class="error-text"></small>
-                </div>
-
-
-                <div class="mb-3">
-                  <label class="form-label small">Proyecto o servicio</label>
-                  <input type="text" id="proyecto" class="form-control mylo-input"
-                    placeholder="Ej: Onepage, web profesional, rediseño">
-                  <small class="error-text"></small>
-                </div>
-
-
-                <div class="mb-4">
-                  <label class="form-label small">Mensaje</label>
-                  <textarea id="mensaje" rows="4" class="form-control mylo-input"
-                    placeholder="Contame un poco más sobre tu idea o necesidad..."></textarea>
-                  <small class="error-text"></small>
-                </div>
-
-                <button type="submit" class="btn btn-mylo w-100">
-                  Enviar por WhatsApp
-                </button>
-
-              </form>
-
-
-
-            </div>
-          </div>
-
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <footer class="mylo-footer pt-5">
-    <div class="container mylo-container">
-
-      <div class="row gy-4 align-items-start text-center text-md-start">
-
-
-        <div class="col-12 col-md-4">
-          <img src="img/logo_lavanda.png" alt="Mylo Soul Studio" class="footer-logo mb-3 mx-4">
-
-          <p class="footer-title mb-1 ">
-            Mylo Soul Studio
+          <p class="hero-subtitle">
+            Creo experiencias digitales claras, funcionales y alineadas
+            con la esencia de cada proyecto.
           </p>
 
-          <p class="footer-text mx-auto mx-md-0">
-            Diseño y desarrollo web con propósito.
-          </p>
+          <a href="#contacto" class="btn btn-mylo mt-4">
+            Trabajemos juntos
+          </a>
         </div>
-
-
-        <div class="col-12 col-md-4">
-          <h2 class="footer-heading h4">Secciones</h2>
-
-          <ul class="footer-links">
-            <li><a href="#sobremi">Sobre Mylo Soul</a></li>
-            <li><a href="#onepage">Servicios</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </div>
-
-
-        <div class="col-12 col-md-4 text-center text-md-end">
-          <h2 class="footer-heading h4 mx-4">Seguime</h2>
-
-          <div class="footer-social justify-content-center justify-content-md-end">
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-            <a href="https://wa.me/5492344412474" target="_blank" aria-label="WhatsApp">
-              <i class="bi bi-whatsapp"></i>
-            </a>
-            <a href="https://www.behance.net/veronicagallego2" target="_blank" aria-label="Behance">
-              <i class="bi bi-behance"></i>
-            </a>
-          </div>
-        </div>
-
       </div>
 
+      <!-- IMAGEN -->
+      <div class="col-lg-6 text-center">
+        <div class="hero-image-wrapper">
+          <img src="img/banner.png" alt="Logo Mylo Soul Studio" class="img-fluid hero-image">
 
-      <hr class="footer-divider">
-
-      <div class="text-center pb-4">
-        <small class="footer-copy">
-          © 2025 · Mylo Soul Studio · Todos los derechos reservados
-        </small>
+        </div>
       </div>
 
     </div>
-  </footer>
+
+  </header>
+
+  <main>
+
+    <section id="sobremi" class="py-5 bg-white">
+  <div class="container-lg py-lg-4 px-4">
+    <div class="row align-items-center g-5">
+
+      <!-- LOGO (solo desktop) -->
+      <div class="col-lg-5 text-center d-none d-lg-block">
+        <img 
+          src="img/logo_lavanda.png" 
+          alt="Mylo Soul Studio" 
+          class="img-fluid hero-image"
+        >
+      </div>
+
+      <!-- TEXTO -->
+      <div class="col-lg-7">
+        <span class="text-uppercase text-muted small fw-semibold">
+          Sobre Mylo Soul Studio
+        </span>
+
+        <h2 class="mt-2 mb-4 h1 fw-bold">
+          Diseño y Desarrollo web
+          <br class="d-none d-md-block">
+          con enfoque estratégico
+        </h2>
+
+        <p class="mb-3">
+          Mylo Soul Studio es un espacio de diseño y desarrollo web orientado a crear
+          soluciones digitales claras, funcionales y alineadas con la identidad de cada
+          proyecto.
+        </p>
+
+        <p class="mb-3">
+          El estudio trabaja desde una mirada integral que combina
+          <strong>diseño visual, experiencia de usuario y programación web</strong>,
+          con el objetivo de construir productos digitales coherentes, escalables y
+          preparados para crecer.
+        </p>
+
+        <p class="mb-3">
+          Cada proyecto se aborda de manera personalizada, cuidando tanto la estética como
+          la estructura técnica, para lograr sitios y aplicaciones que comuniquen con
+          claridad, transmitan confianza y aporten valor real.
+        </p>
+
+        <p class="mb-0">
+          Mylo Soul Studio acompaña a marcas, profesionales y emprendimientos que buscan
+          consolidar su presencia digital a través de soluciones modernas, estratégicas y
+          alineadas con su visión.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+    <section id="formacion" class="py-5 mylo-hero container mylo-hero-container">
+      <div class="container-lg">
+        <div class="row g-5">
+
+          <!-- HERRAMIENTAS -->
+          <div class="col-lg-6">
+            <span class="text-uppercase text-muted small fw-semibold">
+              Herramientas & Tecnologías
+            </span>
+            <h2 class="h1 fw-bold mb-4">
+              Stack de trabajo
+            </h2>
+
+            <div class="row text-center g-4">
+
+              <!-- Diseño -->
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" width="48">
+                <p class="small mt-2 mb-0">Photoshop</p>
+              </div>
+
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
+                  width="48">
+                <p class="small mt-2 mb-0">Illustrator</p>
+              </div>
+
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="48">
+                <p class="small mt-2 mb-0">Figma</p>
+              </div>
+
+              <!-- Frontend -->
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="48">
+                <p class="small mt-2 mb-0">HTML5</p>
+              </div>
+
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="48">
+                <p class="small mt-2 mb-0">CSS3</p>
+              </div>
+
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  width="48">
+                <p class="small mt-2 mb-0">JavaScript</p>
+              </div>
+
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="48">
+                <p class="small mt-2 mb-0">Vue.js</p>
+              </div>
+              <div class="col-4 col-md-3 text-center">
+                <i class="bi bi-phone fs-1 text-dark"></i>
+                <p class="small mt-2 mb-0">PWA</p>
+              </div>
+
+
+
+
+              <!-- Backend -->
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="48">
+                <p class="small mt-2 mb-0">PHP</p>
+              </div>
+
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="48">
+                <p class="small mt-2 mb-0">MySQL</p>
+              </div>
+
+              <div class="col-4 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+                  width="48">
+                <p class="small mt-2 mb-0">WordPress</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- FORMACIÓN -->
+          <div class="col-lg-6">
+            <span class="text-uppercase text-muted small fw-semibold">
+              Formación
+            </span>
+            <h2 class="h1 fw-bold mb-4">
+              Trayectoria académica
+            </h2>
+
+            <div class="border-start border-3 ps-4 mb-4">
+              <h3 class="h5 fw-semibold mb-1">Diseño y Programación Web</h3>
+              <p class="mb-0 text-muted">Escuela Da Vinci · 2024 – Actualidad</p>
+            </div>
+
+            <div class="border-start border-3 ps-4 mb-4">
+              <h3 class="h5 fw-semibold mb-1">Especialización profesional</h3>
+              <p class="mb-0 text-muted">
+                Formación universitaria previa que aporta
+                pensamiento analítico, metodología y enfoque estratégico.
+              </p>
+            </div>
+
+            <a href="formacion.html" class="btn btn-outline-mylo mt-3">
+              Ver formación completa
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="proyectos" class="py-5 px-4 ">
+
+      <div class="container-xl">
+
+        <!-- TÍTULO -->
+        <div class="text-center mb-5">
+          <span class="text-uppercase text-muted small fw-semibold">Portfolio</span>
+          <h2 class="h1 fw-bold mt-2">Proyectos Destacados</h2>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- CARD -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm project-card">
+
+              <img src="img/uiux/portada.png" class="card-img-top" alt="Gourmet Selection UI/UX">
+
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 fw-semibold mb-2">Gourmet Selection</h3>
+
+                <p class="text-muted small mb-3">
+                  Prototipo UI/UX de app móvil enfocado en experiencia de usuario.
+                </p>
+
+                <div class="mb-3">
+                  <span class="badge badge-mylo">UI/UX</span>
+                  <span class="badge badge-mylo">Figma</span>
+                </div>
+
+                <a href="https://www.behance.net/gallery/215041089/Gourmet-Selection" target="_blank"
+                  class="btn btn-mylo-outline btn-sm mt-auto">
+                  Ver proyecto
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm project-card">
+
+              <img src="img/idm/idmstanley.jpg" class="card-img-top" alt="Stanley Responsive">
+
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 fw-semibold mb-2">Stanley · Web Responsive</h3>
+
+                <p class="text-muted small mb-3">
+                  Sitio responsive con foco en interacción móvil.
+                </p>
+
+                <div class="mb-3">
+                  <span class="badge badge-mylo">HTML</span>
+                  <span class="badge badge-mylo">CSS</span>
+                  <span class="badge badge-mylo">Bootstrap</span>
+                </div>
+
+                <a href="https://verys390.github.io/idm.github.io/" target="_blank"
+                  class="btn btn-mylo-outline btn-sm mt-auto">
+                  Ver proyecto
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm project-card">
+
+              <img src="img/js/clinica.jpg" class="card-img-top" alt="Clínica Salud Total">
+
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 fw-semibold mb-2">Clínica Salud Total</h3>
+
+                <p class="text-muted small mb-3">
+                  Sistema web con simulación de turnos y planes.
+                </p>
+
+                <div class="mb-3">
+                  <span class="badge badge-mylo">JavaScript</span>
+                  <span class="badge badge-mylo">LocalStorage</span>
+                </div>
+
+                <a href="https://verys390.github.io/simulador.github.io/" target="_blank"
+                  class="btn btn-mylo-outline btn-sm mt-auto">
+                  Ver proyecto
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm project-card">
+
+              <img src="img/maquetado/portada.png" class="card-img-top" alt="Proyecto adicional">
+
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 fw-semibold mb-2">Proyecto Web</h3>
+
+                <p class="text-muted small mb-3">
+                  Desarrollo frontend responsive.
+                </p>
+
+                <div class="mb-3">
+                  <span class="badge badge-mylo">HTML</span>
+                  <span class="badge badge-mylo">CSS</span>
+                </div>
+
+                <a href="https://www.behance.net/gallery/240461011/Maquetado-y-Desarrollo-Web-Responsive-HTML-CSS"
+                  class="btn btn-mylo-outline btn-sm mt-auto">
+                  Ver proyecto
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contacto" class="py-5 mylo-section-soft mylo-hero container">
+      <div class="container">
+
+        <!-- TÍTULO -->
+        <div class="text-center mb-5">
+          <span class="text-uppercase text-muted small fw-semibold">Contacto</span>
+          <h2 class="h1 fw-bold mt-2">Trabajemos juntos</h2>
+          <p class="text-muted mt-2">
+            Contame sobre tu proyecto y te respondo a la brevedad.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+
+            <form id="formContacto" class="mylo-form p-4 p-md-5">
+
+              <!-- Nombre -->
+              <div class="mb-4">
+                <label for="nombre" class="form-label fw-semibold">
+                  Nombre y apellido
+                </label>
+                <input type="text" class="form-control mylo-input" id="nombre" placeholder="Tu nombre completo"
+                  required>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-4">
+                <label for="email" class="form-label fw-semibold">
+                  Email
+                </label>
+                <input type="email" class="form-control mylo-input" id="email" placeholder="tucorreo@email.com"
+                  required>
+              </div>
+
+              <div class="mb-4">
+                <label for="telefono" class="form-label fw-semibold text-teal-500">
+                  Teléfono
+                </label>
+                <input type="tel" class="form-control rounded-pill px-4 py-2" id="telefono" name="telefono"
+                  placeholder="Tu número de contacto" required>
+              </div>
+
+
+              <!-- Mensaje -->
+              <div class="mb-4">
+                <label for="mensaje" class="form-label fw-semibold">
+                  Mensaje
+                </label>
+                <textarea class="form-control mylo-textarea" id="mensaje" rows="4"
+                  placeholder="Contame brevemente qué necesitás..." required></textarea>
+              </div>
+
+              <!-- CTA -->
+              <div class="text-center mt-4">
+                <button type="submit" class="btn btn-mylo btn-lg px-5">
+                  <i class="fab fa-whatsapp me-2"></i>
+                  Enviar por WhatsApp
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+<footer class="mylo-footer py-5 container">
+  
+
+    <div class="row gy-4 align-items-center text-center text-md-start">
+
+      <!-- 1️⃣ LOGO + LOCALIZACIÓN -->
+      <div class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-start ">
+        <img 
+          src="img/logo_lavanda_b.png" 
+          alt="Mylo Soul Studio"
+          class="logo-desktop d-none d-md-block px-5 mb-2"
+         
+        >
+
+        <p class="mb-1 fw-semibold px-2">Mylo Soul Studio</p>
+        <p class="small mb-0 px-2">Buenos Aires · Argentina</p>
+      </div>
+
+      <!-- 2️⃣ NAV FOOTER -->
+      <nav class="col-12 col-md-4 px-4">
+        <ul class="list-unstyled mb-0 d-flex flex-column gap-2 align-items-center align-items-md-start">
+          <li><a href="#sobremi" class="text-white text-decoration-none">Sobre MyloSoul</a></li>
+          <li><a href="#formacion" class="text-white text-decoration-none">Herramientas & Tecnologías</a></li>
+          <li><a href="#proyectos" class="text-white text-decoration-none">Proyectos</a></li>
+          <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- 3️⃣ REDES SOCIALES -->
+   <div class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-end">
+  <p class="fw-semibold mb-2 px-5 h4 text-white">
+    Seguinos
+  </p>
+<div class="d-flex gap-3 justify-content-center justify-content-md-end px-5">
+
+  <!-- Instagram -->
+  <a 
+    href="https://www.instagram.com/mylosoul/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="text-white fs-4"
+    aria-label="Instagram Mylo Soul"
+  >
+    <i class="bi bi-instagram"></i>
+  </a>
+
+  <!-- LinkedIn -->
+  <a 
+    href="https://www.linkedin.com/in/veronica-gallego-5338122b3" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="text-white fs-4"
+    aria-label="LinkedIn"
+  >
+    <i class="bi bi-linkedin"></i>
+  </a>
+
+  <!-- WhatsApp -->
+  <a 
+    href="https://wa.me/5492344412474" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="text-white fs-4"
+    aria-label="WhatsApp"
+  >
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Behance -->
+  <a 
+    href="https://www.behance.net/veronicagallego2"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-white fs-4"
+    aria-label="Behance Portfolio"
+  >
+    <i class="bi bi-behance"></i>
+  </a>
+
+</div>
+
+</div>
+
+
+    <!-- COPYRIGHT -->
+    <div class="text-center mt-4">
+      <small class="text-white">
+        © 2025 · Mylo Soul Studio · Todos los derechos reservados
+      </small>
+    </div>
+
+ 
+</footer>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+  </div>
   <script src="js/main.js"></script>
 </body>
 
