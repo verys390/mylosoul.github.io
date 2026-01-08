@@ -2,20 +2,36 @@
    PALETA MYLO SOUL
 ========================= */
 :root {
-  --lavanda: #CABDFF;
-  --violeta: #7C6EE6;
-  --gris-oscuro: #1E1E1E;
-  --gris-claro: #F4F4F6;
-  --blanco: #FFFFFF;
+  --lavanda: #cabdff;
+  --violeta: #7c6ee6;
+  --gris-oscuro: #1e1e1e;
+  --gris-claro: #f4f4f6;
+  --blanco: #ffffff;
 }
 
 /* =========================
    BASE
 ========================= */
+html,
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
   color: var(--gris-oscuro);
   background-color: var(--blanco);
+}
+
+/* =========================
+   CONTENEDOR GLOBAL
+========================= */
+.mylo-container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
 
 /* =========================
@@ -29,7 +45,6 @@ body {
 .logo-desktop {
   height: 42px;
 }
-
 .logo-mobile {
   height: 36px;
 }
@@ -60,13 +75,11 @@ body {
     #ebe9ff 50%,
     var(--blanco) 100%
   );
- 
 }
 
 .hero-title {
   font-size: clamp(2.2rem, 4vw, 3.2rem);
   font-weight: 700;
-  color: var(--gris-oscuro);
   line-height: 1.2;
 }
 
@@ -77,11 +90,12 @@ body {
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
-  margin-top: 1.5rem;
+  font-size: 1.05rem;
+  margin-top: 1.25rem;
   max-width: 520px;
   color: #444;
 }
+
 .hero-image {
   max-width: 80%;
   border-radius: 1.5rem;
@@ -89,17 +103,15 @@ body {
 }
 
 /* =========================
-   BOTÓN PRINCIPAL
+   BOTONES
 ========================= */
 .btn-mylo {
   background-color: var(--violeta);
   color: var(--blanco);
-  padding: 0.75rem 2.2rem;
+  padding: 0.65rem 1.8rem;
   border-radius: 999px;
   font-weight: 500;
   border: none;
-  text-decoration: none;
-  display: inline-block;
   transition: all 0.3s ease;
 }
 
@@ -107,39 +119,33 @@ body {
   background-color: var(--lavanda);
   color: var(--gris-oscuro);
 }
-.btn-outline-mylo{
-  border: 2px solid var(--violeta);
+
+.btn-mylo-outline {
+  border: 1.5px solid var(--violeta);
   color: var(--violeta);
-  padding: 0.75rem 2.2rem;
+  background: transparent;
+  padding: 0.55rem 1.4rem;
   border-radius: 999px;
   font-weight: 500;
-  text-decoration: none;
-  display: inline-block;
   transition: all 0.3s ease;
 }
-.badge-mylo {
+
+.btn-mylo-outline:hover {
   background-color: var(--violeta);
-  color: var(--blanco);
-  font-weight: 500;
-  padding: 0.45em 0.75em;
+  color: #fff;
+}
+.project-card .btn {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 999px;
+  font-size: 0.85rem;
+  padding: 0.45rem 1rem;
 }
-
-#sobremi h2 {
-  color: var(--gris-oscuro);
-}
-
-#sobremi strong {
-  color: var(--violeta);
-}
-#sobremi strong {
-  color: var(--violeta);
-}
-.project-card img {
-  height: 180px;
-  object-fit: cover;
-}
-
+/* =========================
+   BADGES
+========================= */
 .badge-mylo {
   background-color: var(--violeta);
   color: #fff;
@@ -149,13 +155,51 @@ body {
   font-size: 0.7rem;
 }
 
+/* =========================
+   SECCIÓN SOBRE MYLO
+========================= */
+
 .mylo-section-soft {
-  background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #f6f4ff 100%
-  );
+  background: linear-gradient(180deg, #ffffff 0%, #f6f4ff 100%);
 }
+
+#sobremi h2 {
+  line-height: 1.25;
+}
+
+#sobremi p {
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+#sobremi strong {
+  color: var(--violeta);
+}
+
+.text-mylo {
+  color: var(--violeta);
+  font-weight: 600;
+}
+
+.about-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: rgba(124, 110, 230, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-icon i {
+  font-size: 1.4rem;
+  color: var(--violeta);
+}
+
+/* =========================
+   CARDS / PROYECTOS
+========================= */
 .project-card {
   border-radius: 1.25rem;
   overflow: hidden;
@@ -166,53 +210,159 @@ body {
   transform: translateY(-4px);
   box-shadow: 0 16px 40px rgba(124, 110, 230, 0.15);
 }
-.btn-mylo-outline {
-  border: 1px solid var(--violeta);
-  color: var(--violeta);
-  background: transparent;
-  border-radius: 999px;
-  font-weight: 500;
+
+.project-card img {
+  height: 180px;
+  object-fit: cover;
 }
 
-.btn-mylo-outline:hover {
-  background-color: var(--violeta);
+/* =========================
+   SECCIONES SUAVES
+========================= */
+.mylo-section-soft {
+  background: linear-gradient(180deg, #ffffff 0%, #f6f4ff 100%);
+}
+
+/* =========================
+   SECCIÓN CONTACTO Y FORMULARIO
+========================= */
+#contacto form {
+  background: #f9f8ff;
+  padding: 2rem;
+  border-radius: 1.25rem;
+}
+
+#contacto .form-control {
+  border-radius: 0.75rem;
+  border: 1px solid #ddd;
+}
+
+#contacto .form-control:focus {
+  border-color: var(--violeta);
+  box-shadow: 0 0 0 0.15rem rgba(124, 110, 230, 0.2);
+}
+
+/* =========================
+   VALIDACIONES FORMULARIO
+========================= */
+
+.mylo-input.error {
+  border: 2px solid var(--violeta);
+  box-shadow: 0 0 0 0.15rem rgba(124, 110, 230, 0.25);
+}
+
+.mylo-input:focus {
+  border-color: var(--violeta);
+  box-shadow: 0 0 0 0.15rem rgba(124, 110, 230, 0.25);
+}
+
+.error-text {
+  color: var(--violeta);
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  display: none;
+}
+
+/* =========================
+   FOOTER MYLO SOUL
+========================= */
+
+.mylo-footer {
+  background: linear-gradient(180deg, #dcd6fd 0%, #bdb3ff 100%);
+}
+
+.footer-logo {
+  max-width: 60px;
+}
+
+.footer-title {
+  font-weight: 600;
   color: #fff;
 }
-.mylo-footer a:hover {
-  opacity: 0.8;
+
+.footer-text {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 260px;
 }
-.mylo-footer {
+
+.footer-heading {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.4rem;
+}
+
+.footer-links a {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.7;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-social a:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.35);
+  margin: 2rem 0 1rem;
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* =========================
+   MODALES / CERTIFICADOS
+========================= */
+.certificado-wrapper {
+  max-width: 520px;
+  width: 100%;
+}
+
+.certificado-img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* =========================
+   UTILIDADES
+========================= */
+.bg-lavanda {
   background-color: var(--lavanda);
 }
-.mylo-footer,
-.mylo-footer a,
-.mylo-footer p,
-.mylo-footer small {
-  color: #ffffff;
-}
-.certificado-wrapper {
-  max-width: 520px;
-  width: 100%;
-}
 
-.certificado-img {
-  width: 100%;
-  height: auto;
-  max-height: 70vh;
-  object-fit: contain;
-  border-radius: 12px;
-}
-.certificado-wrapper {
-  max-width: 520px;
-  width: 100%;
-}
-
-.certificado-img {
-  width: 100%;
-  max-height: 70vh;
-  object-fit: contain;
-  border-radius: 12px;
-}
-.bg-lavanda {
-  background-color: #c9c2ff; /* o tu lavanda exacto */
+@media (max-width: 575px) {
+  #sobremi h2 {
+    font-size: 1.6rem;
+  }
 }

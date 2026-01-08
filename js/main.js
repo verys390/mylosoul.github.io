@@ -1,39 +1,51 @@
-const form = document.getElementById("formContacto");
+document.addEventListener("DOMContentLoaded", () => {
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault(); // Evita envío tradicional
+  const form = document.getElementById("formContacto");
+  const campos = ["nombre", "proyecto", "mensaje"];
 
-  const nombre = document.getElementById("nombre").value;
-  const email = document.getElementById("email").value;
-  const telefono = document.getElementById("telefono").value;
-  const mensaje = document.getElementById("mensaje").value;
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  const texto = `
-Hola Mylo Soul Studio
+    let valido = true;
 
-Nombre: ${nombre}
-Email: ${email}
-Teléfono: ${telefono}
+    campos.forEach(id => {
+      const input = document.getElementById(id);
+      const error = input.nextElementSibling;
+
+      if (!input.value.trim()) {
+        input.classList.add("error");
+        error.textContent = "Este campo es obligatorio";
+        error.style.display = "block";
+        valido = false;
+      }
+    });
+
+    if (!valido) return;
+
+    const texto = `Hola Mylo Soul Studio 👋
+
+Nombre: ${nombre.value}
+Proyecto: ${proyecto.value}
 
 Mensaje:
-${mensaje}
-  `;
+${mensaje.value}`;
 
-  const url = `https://wa.me/5492344412474?text=${encodeURIComponent(texto)}`;
+    const url = `https://wa.me/5492344412474?text=${encodeURIComponent(texto)}`;
+    window.open(url, "_blank");
 
-  // Abrir WhatsApp
-  window.open(url, "_blank");
-
-  // Feedback visual
-  Swal.fire({
-    title: 'Redirigiendo a WhatsApp 📲',
-    text: 'Tu mensaje ya está listo para enviar.',
-    icon: 'success',
-    confirmButtonText: 'Perfecto',
-    confirmButtonColor: '#7C6EE6' // violeta Mylo
+    form.reset();
   });
 
-  form.reset();
-});
-
   
+  campos.forEach(id => {
+    const input = document.getElementById(id);
+    const error = input.nextElementSibling;
+
+    input.addEventListener("input", () => {
+      input.classList.remove("error");
+      error.textContent = "";
+      error.style.display = "none";
+    });
+  });
+
+});
