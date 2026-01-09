@@ -287,9 +287,7 @@ body {
 /* =========================
    FOOTER
 ========================= */
-/* =========================
-   FOOTER · Mylo Soul
-========================= */
+
 
 .mylo-footer {
   background: linear-gradient(180deg, #dcd6fd 0%, #bdb3ff 100%);
@@ -429,9 +427,11 @@ body {
 ========================= */
 @media (min-width: 768px) {
   .footer-social {
-    justify-content: flex-end; /* desktop */
+    justify-content: flex-end;
   }
 }
+
+
 @media (max-width: 575px) {
   #sobremi h2,
   #onepage h2 {
