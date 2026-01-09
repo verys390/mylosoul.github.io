@@ -287,22 +287,45 @@ body {
 /* =========================
    FOOTER
 ========================= */
+/* =========================
+   FOOTER · Mylo Soul
+========================= */
+
 .mylo-footer {
   background: linear-gradient(180deg, #dcd6fd 0%, #bdb3ff 100%);
+  padding: 3rem 0 1.5rem;
+  color: #ffffff;
 }
 
+/* Logo */
 .footer-logo {
-  max-width: 60px;
+  max-width: 72px;
+  margin-bottom: 0.8rem;
 }
 
+/* Títulos footer */
 .footer-heading {
   font-weight: 600;
-  color: #fff;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
 }
 
+/* Texto */
+.footer-title {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+
+/* Links */
 .footer-links {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-links li {
@@ -315,13 +338,19 @@ body {
   text-decoration: none;
 }
 
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
 .footer-social {
   display: flex;
   gap: 1rem;
+  justify-content: center; /* mobile */
 }
 
+
 .footer-social a {
-  color: #fff;
+  color: #ffffff;
   font-size: 1.4rem;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -331,9 +360,30 @@ body {
   opacity: 0.85;
 }
 
+/* Línea divisoria */
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.25);
+  margin: 2rem 0 1rem;
+}
+
+/* Copy */
 .footer-copy {
   font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.8);
+}
+.footer-mail {
+  display: inline-block;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.2s ease, text-decoration 0.2s ease;
+}
+
+.footer-mail:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 
 /* =========================
@@ -349,28 +399,39 @@ body {
   height: 56px;
   bottom: 24px;
   right: 24px;
-  background-color: #7c6ee6;
-  color: #fff;
+  background-color: #7c6ee6; /* violeta Mylo Soul */
+  color: #ffffff;
   border-radius: 50%;
   text-align: center;
   font-size: 28px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  z-index: 999;
+  box-shadow: 0 6px 16px rgba(124, 110, 230, 0.35);
+  z-index: 9999;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .whatsapp-float:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.08);
+  box-shadow: 0 10px 24px rgba(124, 110, 230, 0.45);
+}
+
+.whatsapp-float i {
+  line-height: 1;
 }
 
 
 /* =========================
    RESPONSIVE
 ========================= */
+@media (min-width: 768px) {
+  .footer-social {
+    justify-content: flex-end; /* desktop */
+  }
+}
 @media (max-width: 575px) {
   #sobremi h2,
   #onepage h2 {
